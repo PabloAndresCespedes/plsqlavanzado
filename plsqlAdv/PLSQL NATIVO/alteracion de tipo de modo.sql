@@ -1,0 +1,14 @@
+alter session set plsql_code_type = 'INTERPRETED';
+/
+
+alter session set plsql_code_type = 'NATIVE';
+/
+
+CREATE OR REPLACE PROCEDURE EJEMPLO AS
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('SAMPLEE');
+END;
+/
+
+SELECT * FROM USER_PLSQL_OBJECT_SETTINGS
+WHERE NAME = 'EJEMPLO';
